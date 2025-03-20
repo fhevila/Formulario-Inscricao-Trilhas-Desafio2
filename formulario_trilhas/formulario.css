@@ -1,0 +1,125 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Alinhamento do body */
+body {
+    background-color: #A7C6ED; /* Azul claro */
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #FFF; /* texto branco */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Logo no topo (centralizada) */
+#logo {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+
+/* Cabeçalho */
+#titulo-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#titulo {
+    font-size: 2.5em;
+    color: #2135A6; /* cor azul */
+}
+
+#subtitulo {
+    font-size: 1.2em;
+    color: #F3541C; /* cor laranja claro */
+    margin-bottom: 1em;
+}
+
+/* Formulário */
+form {
+    background-color: #FEE7D6; /* cor laranja claro */
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: none; /* Removido a borda fina */
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Campo do formulário */
+.campo {
+    margin-bottom: 1.5em;
+}
+
+/* Labels */
+.campo label {
+    display: block;
+    font-weight: bold;
+    color: #292524; /* texto-primary */
+    margin-bottom: 0.5em;
+}
+
+/* Inputs, selects, textareas */
+.campo input[type="text"], .campo input[type="email"], .campo input[type="date"], 
+.campo input[type="tel"], .campo select, .campo textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #D6D3D1; /* stroke-default */
+    border-radius: 8px;
+    font-size: 1em;
+    color: #292524; /* texto-primary */
+    background-color: #FFF; /* surface-primary */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus state */
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    border-color: #F3541C; /* stroke-highlight */
+    background-color: #E7E5E4; /* surface-disabled */
+}
+
+/* Botões */
+.botao {
+    background-color: #F3541C; /* stroke-highlight */
+    color: #FFF;
+    font-size: 1.1em;
+    padding: 0.8em;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
+    transition: background-color 0.3s;
+}
+
+/* Hover do botão */
+.botao:hover {
+    background-color: #D33A10; /* cor mais escura */
+}
+
+/* Termos e condições */
+.campo a {
+    color: #F3541C; /* stroke-highlight */
+    text-decoration: none;
+}
+
+/* Div de erro do campo (exemplo para erro de e-mail inválido) */
+input:invalid {
+    border-color: #E43A12; /* text-highlight */
+}
+
+input:invalid ~ .campo span {
+    color: #E43A12; /* text-highlight */
+    font-size: 0.9em;
+}

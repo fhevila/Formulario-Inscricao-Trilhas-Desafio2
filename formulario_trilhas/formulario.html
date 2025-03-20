@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <!-- Título da página -->
+    <title>Cadastro de Inscrição</title>
+</head>
+
+<body>
+
+    <!-- Logo no centro (centralizada no topo) -->
+    <div id="logo">
+        <img src="file:///C:/Users/fhevi/Desktop/formulario_trilhas/imagens/Group.png" alt="Logo Trilhas" width="60" height="auto">
+        <img src="file:///C:/Users/fhevi/Desktop/formulario_trilhas/imagens/Vector.png" alt="Logo Inova Maranhão" width="60" height="auto">
+    </div>
+
+    <!-- Cabeçalho com título e subtítulo -->
+    <div id="titulo-container">
+        <h1 id="titulo">Formulário de Inscrição Trilhas</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <!-- Informações do participante -->
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome completo</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="dataNascimento"><strong>Data de nascimento</strong></label>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+            </div>
+
+            <div class="campo">
+                <label for="cpf"><strong>CPF</strong></label>
+                <input type="text" name="cpf" id="cpf" required>
+            </div>
+
+            <div class="campo">
+                <label for="sexo"><strong>Sexo</strong></label>
+                <select name="sexo" id="sexo" required>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="tel" name="telefone" id="telefone" required>
+            </div>
+
+            <div class="campo">
+                <label for="documentoIdentidade"><strong>Documento de Identidade</strong></label>
+                <input type="file" name="documentoIdentidade" id="documentoIdentidade" required>
+            </div>
+
+            <!-- Endereço Residencial -->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cep"><strong>CEP</strong></label>
+                    <input type="text" name="cep" id="cep" required>
+                </div>
+
+                <div class="campo">
+                    <label for="rua"><strong>Rua</strong></label>
+                    <input type="text" name="rua" id="rua" required>
+                </div>
+
+                <div class="campo">
+                    <label for="numero"><strong>Número</strong></label>
+                    <input type="text" name="numero" id="numero" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade"><strong>Cidade</strong></label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <input type="text" name="estado" id="estado" required>
+                </div>
+
+                <div class="campo">
+                    <label for="comprovanteResidencia"><strong>Comprovante de residência</strong></label>
+                    <input type="file" name="comprovanteResidencia" id="comprovanteResidencia" required>
+                </div>
+            </fieldset>
+
+            <!-- Trilha de Aprendizado -->
+            <div class="campo">
+                <label for="trilha"><strong>Trilha de Aprendizado</strong></label>
+                <select name="trilha" id="trilha" required>
+                    <option value="frontend">Programação Front-end</option>
+                    <option value="backend">Programação Back-end</option>
+                    <option value="games">Programação de Jogos</option>
+                    <option value="design">Design e Experiência</option>
+                    <option value="data">Ciência de Dados</option>
+                </select>
+            </div>
+
+            <!-- Termos e Condições -->
+            <div class="campo">
+                <label for="termos">
+                    <input type="checkbox" name="termos" id="termos" required>
+                    Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>.
+                </label>
+            </div>
+
+            <!-- Botões -->
+            <div class="campo">
+                <button type="button" class="botao" onclick="window.location.href='index.html';">Cancelar</button>
+                <button type="submit" class="botao">Fazer Inscrição</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
